@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body style="margin:0;background:#eef2f7;font-family:Arial,Helvetica,sans-serif;">
+
+<div style="max-width:650px;margin:auto;background:white;border-radius:12px;overflow:hidden;box-shadow:0 6px 18px rgba(0,0,0,0.12);">
+
+    <!-- Header -->
+    <div style="background:linear-gradient(90deg,#ff9800,#ffb74d);padding:30px;text-align:center;color:white;">
+        <h1 style="margin:0;font-size:26px;">📚 Learning Management System</h1>
+        <p style="margin:5px 0 0 0;">Account Registration</p>
+    </div>
+
+    <!-- Content -->
+    <div style="padding:35px;text-align:center;">
+
+        <h2 style="color:#333;margin-top:0;">
+            Welcome <span th:text="${name}" style="color:#ff9800;"></span> 👋
+        </h2>
+
+        <p style="color:#666;font-size:16px;">
+            Thank you for registering in our LMS platform.
+        </p>
+
+        <!-- Status Card -->
+        <div style="background:#fff7e6;border:2px dashed #ff9800;border-radius:10px;padding:25px;margin:30px 0;">
+
+            <h2 style="color:#ff9800;margin:0;">⏳ Pending Approval</h2>
+
+            <p style="color:#555;font-size:15px;margin-top:10px;">
+                Your account is waiting for administrator approval.
+                Once approved, you will receive another email to start learning.
+            </p>
+
+        </div>
+
+        <p style="color:#888;font-size:14px;">
+            This process usually takes only a short time.
+            Thank you for your patience.
+        </p>
+
+    </div>
+
+    <!-- Footer -->
+    <div style="background:#f4f4f4;text-align:center;padding:18px;font-size:13px;color:#777;">
+        © 2026 Learning Management System<br>
+        Empowering Learning Everywhere
+    </div>
+
+</div>
+
+</body>
+</html>
